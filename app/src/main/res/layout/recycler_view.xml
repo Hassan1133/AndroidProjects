@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:gravity="center"
+    >
+
+        <RelativeLayout
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/recycler_card_style"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_card_img"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/pizza"
+                app:shapeAppearance="@style/topCornerBorderRadius"
+            />
+
+
+            <RelativeLayout
+                android:id="@+id/card_icon_layout"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/background_style"
+                android:padding="30px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/main_card_img"
+                android:layout_marginTop="-40dp"
+                >
+
+                <ImageView
+                    android:id="@+id/card_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/android_logo"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/card_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ANDROID DEVELOPMENT"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/card_icon_layout"
+                />
+
+            <TextView
+                android:id="@+id/card_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo"
+                android:layout_marginTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#555555"
+                android:layout_below="@+id/card_heading"
+                android:textAlignment="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="12dp"
+                />
+
+            <Button
+                android:id="@+id/card_btn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="See Channel"
+                android:background="@drawable/button_style"
+                android:textColor="#FF6F00"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/card_text"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+</RelativeLayout>
